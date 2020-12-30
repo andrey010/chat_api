@@ -1,0 +1,53 @@
+{
+  "name": "chat_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "apidoc": {
+    "title": "Chat API Documentation",
+    "url": "http://localhost:8080"
+  },
+  "scripts": {
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
+    "eslint:dump": "eslint --print-config ./.eslintrc.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.ts",
+    "build": "tsc --project ./",
+    "apidoc": "apidoc"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "restapi"
+  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "multer": "^1.4.2",
+    "twilio": "^3.54.1",
+    "uuid": "^8.3.2"
+  },
+  "author": "Andrii Bondarenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/multer": "^1.4.5",
+    "@types/node": "^14.14.16",
+    "@types/node-fetch": "^2.5.7",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "grunt-apidoc": "^0.11.0",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
